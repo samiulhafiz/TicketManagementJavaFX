@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="697.0" prefWidth="606.0" style="-fx-background-color: cyan;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="finaltermassignementticketmanagement.FXMLDocumentController">
+   <children>
+      <Pane layoutX="178.0" layoutY="106.0" prefHeight="215.0" prefWidth="286.0" style="-fx-background-color: blue;">
+         <children>
+            <Label layoutX="23.0" layoutY="27.0" text="Name" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <Label layoutX="17.0" layoutY="88.0" text="Mobile" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <Label layoutX="17.0" layoutY="159.0" text="Destination" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtName" layoutX="115.0" layoutY="34.0" />
+            <TextField fx:id="txtMobile" layoutX="115.0" layoutY="95.0" />
+            <TextField fx:id="txtDestination" layoutX="115.0" layoutY="161.0" />
+         </children>
+      </Pane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="55.0" layoutX="145.0" layoutY="23.0" stroke="#33cfff" strokeType="INSIDE" strokeWidth="5.0" width="350.0" />
+      <Label layoutX="170.0" layoutY="35.0" text="Passenger Registration" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="27.0" />
+         </font>
+      </Label>
+      <TableView fx:id="table" layoutX="127.0" layoutY="349.0" prefHeight="259.0" prefWidth="386.0">
+        <columns>
+          <TableColumn fx:id="IDColmn" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="NameColmn" prefWidth="115.20002746582031" text="Passenger Name" />
+            <TableColumn fx:id="MobileColmn" prefWidth="90.4000244140625" text="Mobile" />
+            <TableColumn fx:id="DestinationColmn" prefWidth="105.5999755859375" text="Destination" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnAdd" layoutX="178.0" layoutY="648.0" mnemonicParsing="false" onAction="#Add" prefHeight="26.0" prefWidth="71.0" style="-fx-background-color: black;" text="ADD" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnUpdate" layoutX="285.0" layoutY="648.0" mnemonicParsing="false" onAction="#Update" prefHeight="26.0" prefWidth="71.0" style="-fx-background-color: black;" text="UPDATE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnDelete" layoutX="393.0" layoutY="648.0" mnemonicParsing="false" onAction="#Delete" prefHeight="26.0" prefWidth="71.0" style="-fx-background-color: Red;" text="DELETE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
